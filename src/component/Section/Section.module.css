@@ -1,0 +1,6 @@
+.name {
+  display: flex;
+  color: rgb(6, 54, 6);
+  margin: 0;
+  justify-content: center;
+}
