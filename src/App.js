@@ -15,6 +15,7 @@ function App() {
   const [photos, setPhotos] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState('');
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (dayChange === '') {
@@ -54,7 +55,7 @@ function App() {
         }
       })
       .catch(error => {
-        alert('Ой-йой! Марсіани нас знайшли!');
+        setError(error);
       })
       .finally(() => setIsLoading(false));
   };
@@ -73,6 +74,7 @@ function App() {
       {photos.length > 24 && !isLoading && <Button onClick={buttonLoadMore} />}
       {isLoading && <Spin />}
       <Message text={message} />
+      {error !== null && <h1>{error.message}</h1>}
     </>
   );
 }
