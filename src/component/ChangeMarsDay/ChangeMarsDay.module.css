@@ -1,4 +1,4 @@
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .enterDayContainer {
     display: block;
     margin-right: auto;
@@ -15,7 +15,7 @@
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .labelEnterDay {
     display: block;
     margin-right: auto;
@@ -29,7 +29,7 @@
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .enterDay {
     display: block;
     margin-right: auto;
@@ -61,7 +61,7 @@
     background-color: rgb(221, 172, 139);
   }
 }
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   button {
     display: block;
     padding: 8px 16px;

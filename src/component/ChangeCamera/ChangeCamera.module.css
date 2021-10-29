@@ -1,4 +1,4 @@
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .cameraContainer {
     box-sizing: border-box;
     display: block;
@@ -31,7 +31,7 @@
   width: 250px;
 }
 
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .kardRadio {
     font-size: inherit;
     margin-bottom: 0;
@@ -62,7 +62,7 @@
   border-color: green;
 }
 
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .planDetails {
     border: 3px solid #bfe2ff;
     border-radius: 15px;
