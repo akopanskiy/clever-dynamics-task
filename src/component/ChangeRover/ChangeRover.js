@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './ChangeRover.module.css';
 import photoCuriosity from '../../images/curiosity.jpg';
 import photoOpportunity from '../../images/opportunity.jpg';
@@ -62,5 +64,9 @@ const ChangeRover = ({ rover, onChange }) => {
       </label>
     </div>
   );
+};
+ChangeRover.propTypes = {
+  rover: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 export default ChangeRover;

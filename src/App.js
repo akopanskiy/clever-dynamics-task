@@ -72,7 +72,7 @@ function App() {
       <PhotosGallery images={photos} />
       {photos.length > 24 && !isLoading && <Button onClick={buttonLoadMore} />}
       {isLoading && <Spin />}
-      <Message text={message} />;
+      <Message text={message} />
     </>
   );
 }

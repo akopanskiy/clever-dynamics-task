@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './ChangeMarsDay.module.css';
 
 const ChangeMarsDay = ({ marsDay, onchange, activeButton }) => {
@@ -27,5 +29,10 @@ const ChangeMarsDay = ({ marsDay, onchange, activeButton }) => {
       </button>
     </div>
   );
+};
+
+ChangeMarsDay.propTypes = {
+  activeButton: PropTypes.bool.isRequired,
+  marsDay: PropTypes.node,
 };
 export default ChangeMarsDay;

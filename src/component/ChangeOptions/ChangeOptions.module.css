@@ -1,6 +1,7 @@
 body {
   background-image: url('../../images/mars.jpg');
   background-size: cover;
+  width: 100%;
 }
 .form {
   display: block;

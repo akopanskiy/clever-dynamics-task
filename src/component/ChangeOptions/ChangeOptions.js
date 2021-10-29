@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './ChangeOptions.module.css';
 
 import ChangeRover from '../ChangeRover';
@@ -6,7 +7,7 @@ import ChangeCamera from '../ChangeCamera';
 import ChangeMarsDay from '../ChangeMarsDay';
 import Section from '../Section';
 
-const ChangeOptions = ({ onSubmit, morePhotos }) => {
+const ChangeOptions = ({ onSubmit }) => {
   const [rover, setRover] = useState('curiosity');
   const [camera, setCamera] = useState('fhaz');
   const [day, setDay] = useState('');
@@ -58,5 +59,8 @@ const ChangeOptions = ({ onSubmit, morePhotos }) => {
       </Section>
     </form>
   );
+};
+ChangeOptions.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 export default ChangeOptions;

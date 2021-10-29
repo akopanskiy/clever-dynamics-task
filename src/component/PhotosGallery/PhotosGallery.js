@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import PhotosGalleryItem from '../PhotosGalleryItem';
 import styles from './PhotosGallery.module.css';
 
@@ -9,5 +11,8 @@ const PhotosGallery = ({ images }) => {
       ))}
     </ul>
   );
+};
+PhotosGallery.propTypes = {
+  images: PropTypes.array,
 };
 export default PhotosGallery;

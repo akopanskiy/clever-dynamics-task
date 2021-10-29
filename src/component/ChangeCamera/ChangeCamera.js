@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './ChangeCamera.module.css';
 import front from '../../images/front.jpg';
 import rear from '../../images/rear.jpg';
@@ -62,5 +64,9 @@ const ChangeCamera = ({ camera, onChange }) => {
       </label>{' '}
     </div>
   );
+};
+ChangeCamera.propTypes = {
+  camera: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 export default ChangeCamera;

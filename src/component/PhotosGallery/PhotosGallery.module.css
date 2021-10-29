@@ -1,12 +1,25 @@
-.ImageGallery {
-  display: grid;
-  max-width: calc(100vw - 48px);
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  .ImageGallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ImageGallery {
+    display: grid;
+    max-width: calc(100vw - 48px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
